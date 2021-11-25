@@ -15,9 +15,11 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+
 /**
- * RequestDataFrom Server function used in API Calling
+ * This class used to Movie API call
  */
+
 public class MovieListPresenter implements IMovieModel,IMovieView{
 
     private IMovieView IMovieView;
@@ -31,6 +33,9 @@ public class MovieListPresenter implements IMovieModel,IMovieView{
         this.IMovieView = movieListIMovieView;
     }
 
+    /**
+     * RequestDataFrom Server function used in API Calling
+     */
 
     @Override
     public void requestDataFromServer() {

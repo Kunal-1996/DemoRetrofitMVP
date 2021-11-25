@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  * 1.Movie Model Interface
- * 2.
+ *
  */
 
 public interface IMovieModel {
