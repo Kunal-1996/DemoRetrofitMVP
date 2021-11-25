@@ -15,6 +15,9 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+/**
+ * RequestDataFrom Server function used in API Calling
+ */
 public class MovieListPresenter implements IMovieModel,IMovieView{
 
     private IMovieView IMovieView;

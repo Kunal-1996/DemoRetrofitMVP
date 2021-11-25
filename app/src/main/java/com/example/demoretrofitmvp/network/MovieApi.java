@@ -3,6 +3,9 @@ package com.example.demoretrofitmvp.network;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
+/**
+ * This Class is used to do Movie API Call
+ */
 public class MovieApi {
 
     public static final String BASE_URL = "https://api.themoviedb.org/3/";
