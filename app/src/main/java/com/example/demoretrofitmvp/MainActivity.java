@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements IMovieView {
         private MovieListAdapter movieListAdapter;
         private ProgressBar pbLoading;
         private int pageNo = 1;
+        private Context context;
 
         private LinearLayoutManager layoutManager;
 
@@ -68,6 +70,6 @@ public class MainActivity extends AppCompatActivity implements IMovieView {
     @Override
     public void onFailure(Throwable t) {
         Log.e("ERROR:", t.getMessage());
-        Toast.makeText(MainActivity.this, "Please Connect Internet", Toast.LENGTH_LONG).show();
+        Toast.makeText(MainActivity.this, context.getResources().getString(R.string.txt_internet) , Toast.LENGTH_LONG).show();
     }
 }
