@@ -8,6 +8,7 @@ import retrofit2.http.Query;
 
 public interface IMovieApi {
 
+    //Get Movie List
     @GET("movie/popular")
     Call<MovieListResponse> getPopularMovies(@Query("api_key") String apiKey, @Query("page") int pageNo);
 }
