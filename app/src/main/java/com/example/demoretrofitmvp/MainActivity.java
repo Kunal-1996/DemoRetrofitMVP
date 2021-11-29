@@ -14,7 +14,7 @@ import android.widget.Toast;
 import com.example.demoretrofitmvp.contract.IMovieView;
 import com.example.demoretrofitmvp.model.Movie;
 import com.example.demoretrofitmvp.presenter.MovieListPresenter;
-import com.example.demoretrofitmvp.view.MovieListAdapter;
+import com.example.demoretrofitmvp.adapter.MovieListAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
